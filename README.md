@@ -14,7 +14,7 @@
 
 ## 使い方
 
-1. follow.js, undo.jsのrelayUrlとdomainを適切な値に変更
+1. `follow.js`, `undo.js`のrelayUrlとdomainを適切な値に変更
 
 2. nvmでNode.jsをインストール
 
@@ -29,7 +29,9 @@ nvm use
 pnpm i
 ```
 
-4. follow.jsあるいはundo.jsを実行
+4. `.env`ファイルを作り、リレーサーバーと通信したいアクターの秘密鍵を`PRIVATE_KEY`環境変数に設定
+
+5. `follow.js`あるいは`undo.js`を実行
 
 ```bash
 cd src
