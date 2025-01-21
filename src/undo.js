@@ -101,6 +101,7 @@ const activity = {
   "type": "Undo",
   "actor": `https://${domain}/actor`,
   "object": {
+    "id": `https://${domain}/activities/follow-relay-${Date.now()}`,
     "type": "Follow",
     "actor": `https://${domain}/actor`,
     "object": "https://www.w3.org/ns/activitystreams#Public"
