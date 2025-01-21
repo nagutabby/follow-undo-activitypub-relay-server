@@ -98,15 +98,10 @@ async function sendToRelay(activity) {
 
 const activity = {
   "@context": "https://www.w3.org/ns/activitystreams",
-  "type": "Undo",
+  "type": "Follow",
   "actor": `https://${domain}/actor`,
-  "object": {
-    "id": `https://${domain}/activities/follow-relay-${Date.now()}`,
-    "type": "Follow",
-    "actor": `https://${domain}/actor`,
-    "object": "https://www.w3.org/ns/activitystreams#Public"
-  },
-  "id": `https://${domain}/activities/undo-relay-${Date.now()}`
+  "object": "https://www.w3.org/ns/activitystreams#Public",
+  "id": `https://${domain}/activities/subscribe-relay-${Date.now()}`
 };
 
 console.log('Starting request...');
