@@ -101,12 +101,12 @@ const activity = {
   "type": "Undo",
   "actor": `https://${domain}/actor`,
   "object": {
-    "id": `https://${domain}/activities/follow-relay-${Date.now()}`,
+    "id": `https://${domain}/activities/follow-relay`,
     "type": "Follow",
     "actor": `https://${domain}/actor`,
     "object": "https://www.w3.org/ns/activitystreams#Public"
   },
-  "id": `https://${domain}/activities/undo-relay-${Date.now()}`
+  "id": `https://${domain}/activities/undo-follow-relay`
 };
 
 console.log('Starting request...');

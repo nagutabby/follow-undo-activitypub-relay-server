@@ -101,7 +101,7 @@ const activity = {
   "type": "Follow",
   "actor": `https://${domain}/actor`,
   "object": "https://www.w3.org/ns/activitystreams#Public",
-  "id": `https://${domain}/activities/follow-relay-${Date.now()}`
+  "id": `https://${domain}/activities/follow-relay`
 };
 
 console.log('Starting request...');

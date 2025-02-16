@@ -2,7 +2,7 @@
 ## 機能
 - follow.js
   - ActivityPubのリレーサーバーと接続するためのリクエストを送信
-- undo.js
+- undoFollow.js
   - ActivityPubのリレーサーバーとの接続を解除するためのリクエストを送信
 ## 説明
 - リレーサーバーとの接続
@@ -31,10 +31,10 @@ pnpm i
 
 4. `.env`ファイルを作り、リレーサーバーと通信したいアクターの秘密鍵を`PRIVATE_KEY`環境変数に設定
 
-5. `follow.js`あるいは`undo.js`を実行
+5. `follow.js`あるいは`undoFollow.js`を実行
 
 ```bash
 cd src
 node follow.js
-node undo.js
+node undoFollow.js
 ```
